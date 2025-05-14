@@ -10,6 +10,70 @@ This sample demonstrates the following use cases:
 - [Protecting client-side rendered pages](https://github.com/auth0-samples/auth0-nextjs-samples/blob/main/Sample-01/pages/profile.jsx#L43-L46)
 - [Calling APIs](https://github.com/auth0-samples/auth0-nextjs-samples/blob/main/Sample-01/pages/external.jsx)
 
+## Getting Started
+
+### Prerequisites
+- Node.js v18+ (recommended: use nvm or fnm to match project version)
+- npm v9+ or yarn
+
+### 1. Clone the repo
+```sh
+git clone https://github.com/Den-web/auth0-next-sample.git
+cd auth0-next-sample
+```
+
+### 2. Install dependencies
+```sh
+npm install
+# or
+yarn install
+```
+
+### 3. Set up environment variables
+Copy `.env.example` to `.env.local` and fill in the required values:
+```sh
+cp .env.example .env.local
+```
+Edit `.env.local` and set your Auth0 credentials and any other required secrets.
+
+### 4. Build and run
+#### Development
+```sh
+npm run dev
+# or
+yarn dev
+```
+
+#### Production
+```sh
+npm run build
+npm start
+# or
+yarn build
+yarn start
+```
+
+### 5. Node version
+This project is tested with Node.js v18.x. Use nvm or fnm to match:
+```sh
+nvm install 18
+nvm use 18
+```
+
+### 6. Auth0 Setup
+- You need to create an Auth0 application and set the callback/logout URLs to match your deployment.
+- Required env variables (see `.env.example`):
+  - AUTH0_DOMAIN
+  - AUTH0_CLIENT_ID
+  - AUTH0_CLIENT_SECRET
+  - AUTH0_SCOPE
+  - AUTH0_REDIRECT_URI
+  - AUTH0_POST_LOGOUT_REDIRECT_URI
+
+---
+
+For more, see [Next.js docs](https://nextjs.org/) and [Auth0 Next.js SDK docs](https://auth0.com/docs/quickstart/webapp/nextjs).
+
 ## Project setup
 
 Use `npm` to install the project dependencies:
